@@ -26,16 +26,22 @@ public class AppiumUtil {
         int locindex = Integer.valueOf(loc.substring(idx2+1,loc.length()-1));
         List<WebElement> e =null;
         switch (locatorname) {
-            case "resource-id": {
+            case "resource-id":
                 e = step.getAdriver().findElements(By.id(locatorvalue));
                 break;
-            }
             case "text":
                 e = step.getAdriver().findElementsByAndroidUIAutomator("new UiSelector().text(\""+locatorvalue+"\")");
-
-                String A = "213";
-                String B = "" + A + "";
-
+                break;
+            case "class":
+                e = step.getAdriver().findElements(By.className(locatorvalue));
+                break;
+            case "content-desc":
+                e = step.getAdriver().findElementsByAccessibilityId(locatorvalue);
+            case "xpath":
+                e = step.getAdriver().findElements(By.xpath(locatorvalue));
+            default:
+                throw new Exception("step元素locator属性配置有误，'='之前必须为resource-id、text、calss、content-desc和xpath之一！");
         }
+        return e==null?null:e.get(locindex);
     }
 }

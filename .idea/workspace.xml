@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b00dca9e-5364-47d2-bdcc-21810ed428c2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_TestNG_Release.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_TestNG_Release.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Handler/ClickActionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Handler/ClickActionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Service/AndroidXmlParseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Service/AndroidXmlParseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Util/AppiumUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Util/AppiumUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,8 +33,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Base/StepAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            <state relative-caret-position="126">
+              <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+              <folding>
+                <element signature="method#StepAction#0;class#StepAction#0" />
+                <element signature="method#StepAction#1;class#StepAction#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Handler/ClickActionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="294">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -47,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Util/SeleniumUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
+            <state relative-caret-position="273">
               <caret line="16" column="26" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -56,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Util/AppiumUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="38" />
+            <state relative-caret-position="504">
+              <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,11 +76,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Service/AndroidXmlParseService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="588">
+              <caret line="28" column="79" lean-forward="true" selection-start-line="28" selection-start-column="79" selection-end-line="28" selection-end-column="79" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,9 +130,9 @@
         <option value="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Base/TestUnit.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestCases/WeChatLogin.java" />
         <option value="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Base/TestCase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Util/AppiumUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Handler/ClickActionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Service/AndroidXmlParseService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Util/AppiumUtil.java" />
       </list>
     </option>
   </component>
@@ -145,6 +156,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,7 +230,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -245,7 +256,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="D:/mksdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594895729355" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594895734372" />
     <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -308,7 +319,9 @@
       <workItem from="1594006094853" duration="46000" />
       <workItem from="1594801618218" duration="8379000" />
       <workItem from="1594827362925" duration="2304000" />
-      <workItem from="1594865127476" duration="6151000" />
+      <workItem from="1594865127476" duration="6403000" />
+      <workItem from="1594953270163" duration="704000" />
+      <workItem from="1594977025786" duration="2555000" />
     </task>
     <servers />
   </component>
@@ -345,13 +358,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56250000" />
+    <option name="totallyTimeSpent" value="59761000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.23081024" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.23614073" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -360,6 +373,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" sideWeight="0.5005417" side_tool="true" weight="0.26332623" />
       <window_info id="Resources Explorer" order="8" />
+      <window_info anchor="bottom" id="Thumbnails" weight="0.329718" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.23293608" />
@@ -432,41 +446,10 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/TestCases/WeChatLogin.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Base/TestCase.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Base/TestUnit.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Base/StepAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Handler/ClickActionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Util/SeleniumUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Base/TestStep.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Service/AndroidXmlParseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -477,10 +460,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Base/StepAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding>
+            <element signature="method#StepAction#0;class#StepAction#0" />
+            <element signature="method#StepAction#1;class#StepAction#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Handler/ClickActionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Util/SeleniumUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Util/AppiumUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="38" />
+        <state relative-caret-position="504">
+          <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Service/AndroidXmlParseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="79" lean-forward="true" selection-start-line="28" selection-start-column="79" selection-end-line="28" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
