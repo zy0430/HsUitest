@@ -2,6 +2,9 @@ package AutomationTestSystem.Base;
 
 import AutomationTestSystem.Handler.ClickActionHandler;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public enum StepAction {
 
     ADDITION("addition", "加法测试", ClickActionHandler.class);
@@ -11,6 +14,15 @@ public enum StepAction {
     private String desc;
 
     private Class<?> handler;
+
+    private static Map<String,StepAction> map;
+
+    static{
+        map = new HashMap<String,StepAction>();
+        for(StepAction action : StepAction.values()){
+            map.put(action.key(), action);
+        }
+    }
 
     private StepAction(String key, String desc, Class<?> handler) {
         this(key, desc);
@@ -22,6 +34,12 @@ public enum StepAction {
         this.desc = desc;
     }
 
+    public static StepAction action(String name) {
+        return map.get(name);
+    }
+    public String key(){
+        return this.key;
+    }
     public String getKey() {
         return key;
     }
