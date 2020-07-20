@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b00dca9e-5364-47d2-bdcc-21810ed428c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_TestNG_Release.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_TestNG_Release.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Handler/ClickActionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Handler/ClickActionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Service/AndroidXmlParseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Service/AndroidXmlParseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Util/AppiumUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AutomationTestSystem/Util/AppiumUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -79,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Service/AndroidXmlParseService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="28" column="79" lean-forward="true" selection-start-line="28" selection-start-column="79" selection-end-line="28" selection-end-column="79" />
+            <state relative-caret-position="378">
+              <caret line="18" column="71" lean-forward="true" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -256,7 +252,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="D:/mksdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594895734372" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595214455498" />
     <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -321,7 +317,7 @@
       <workItem from="1594827362925" duration="2304000" />
       <workItem from="1594865127476" duration="6403000" />
       <workItem from="1594953270163" duration="704000" />
-      <workItem from="1594977025786" duration="2555000" />
+      <workItem from="1594977025786" duration="2649000" />
     </task>
     <servers />
   </component>
@@ -358,7 +354,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59761000" />
+    <option name="totallyTimeSpent" value="59855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -500,8 +496,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AutomationTestSystem/Service/AndroidXmlParseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="79" lean-forward="true" selection-start-line="28" selection-start-column="79" selection-end-line="28" selection-end-column="79" />
+        <state relative-caret-position="378">
+          <caret line="18" column="71" lean-forward="true" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
