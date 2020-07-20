@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/sportRecovery2$D__code_testcode_sportRecovery2_testng_xml.ic" NAME="$PROJECT_DIR$/testng.xml Coverage Results" MODIFIED="1593674326999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+=======
   <component name="ChangeListManager">
     <list default="true" id="b00dca9e-5364-47d2-bdcc-21810ed428c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -279,6 +284,7 @@
       </list>
     </option>
   </component>
+>>>>>>> 42d6ca62c04e5ca9bfed649ab69125cd76a7fc09
   <component name="RunManager">
     <configuration name="D:/code/testcode/sportRecovery2/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sportRecovery2" />
@@ -296,6 +302,8 @@
       </list>
     </recent_temporary>
   </component>
+<<<<<<< HEAD
+=======
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -594,4 +602,5 @@
       </state>
     </states>
   </component>
+>>>>>>> 42d6ca62c04e5ca9bfed649ab69125cd76a7fc09
 </project>
