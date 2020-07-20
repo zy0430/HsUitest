@@ -63,4 +63,12 @@ public enum StepAction {
     public void setHandler(Class<?> handler) {
         this.handler = handler;
     }
+
+    public Class<?> handler() {
+        return this.handler;
+    }
+
+    public void run(TestStep step) throws Exception{
+
+    }
 }

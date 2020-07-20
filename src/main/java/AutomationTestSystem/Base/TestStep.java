@@ -3,7 +3,7 @@ package AutomationTestSystem.Base;
 import java.util.Map;
 
 public class TestStep extends TestBase{
-    private String action;
+    private StepAction action;
 
     private String locator;
 
@@ -23,11 +23,11 @@ public class TestStep extends TestBase{
 
     private String body;
 
-    public String getAction() {
+    public StepAction getAction() {
         return action;
     }
 
-    public void setAction(String action) {
+    public void setAction(StepAction action) {
         this.action = action;
     }
 

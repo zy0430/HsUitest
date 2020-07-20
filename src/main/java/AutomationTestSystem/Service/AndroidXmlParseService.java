@@ -1,36 +1,40 @@
 package AutomationTestSystem.Service;
 
 import java.io.File;
-
-import AutomationTestSystem.Base.StepAction;
-import AutomationTestSystem.Base.TestCase;
-import AutomationTestSystem.Base.TestStep;
-import org.openqa.selenium.WebElement;
-import AutomationTestSystem.Base.TestUnit;
-import io.appium.java_client.android.AndroidDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-
 import java.io.IOException;
 import java.lang.reflect.Method;
-import java.net.URL;
 import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import jdk.internal.org.xml.sax.SAXException;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
 
-import javax.print.Doc;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
+import AutomationTestSystem.Base.StepAction;
+import AutomationTestSystem.Base.TestCase;
+import AutomationTestSystem.Base.TestStep;
+import AutomationTestSystem.Base.TestUnit;
+import io.appium.java_client.android.AndroidDriver;
 
 public class AndroidXmlParseService {
 
@@ -49,6 +53,7 @@ public class AndroidXmlParseService {
         capabilities.setCapability("resetKeyboard", true);
         capabilities.setCapability("newCommandTimeout", 6000);
         capabilities.setCapability("noSign", true);
+        System.out.println(capabilities);
         driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(8000, TimeUnit.MILLISECONDS);
     }
