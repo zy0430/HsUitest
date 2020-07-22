@@ -234,7 +234,7 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG.WeChatLogin">
-    <configuration name="TestngReport.xml" type="TestNG">
+    <configuration name="TestngReport.xml" type="TestNG" factoryName="TestNG">
       <module name="sportRecovery2" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/TestReportXml/TestngReport.xml" />
       <option name="PACKAGE_NAME" value="" />
@@ -255,7 +255,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WeChatLogin" type="TestNG">
+    <configuration name="WeChatLogin" type="TestNG" factoryName="TestNG">
       <module name="sportRecovery2" />
       <extension name="coverage">
         <pattern>
@@ -267,7 +267,6 @@
       <option name="PACKAGE_NAME" value="TestCases" />
       <option name="MAIN_CLASS_NAME" value="TestCases.WeChatLogin" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -281,11 +280,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG">
+    <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="SUITE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
