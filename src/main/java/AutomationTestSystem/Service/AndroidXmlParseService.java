@@ -40,13 +40,13 @@ public class AndroidXmlParseService {
 
     static public AndroidDriver<WebElement> driver;
 
-    public static void AppiumConfigure(String ApkName,String ApkPackageName, String PlatformName, String platformVersion, String deviceName, String udid) throws MalformedURLException {
+    public static void AppiumConfigure(String ApkName,String ApkPackageName, String PlatformName, String platformVersion, String DeviceID) throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("device", "uiautomator2");
         capabilities.setCapability("platformName", PlatformName);
         capabilities.setCapability("platformVersion", platformVersion);
-        capabilities.setCapability("deviceName", deviceName);
-        capabilities.setCapability("udid", udid);
+        capabilities.setCapability("deviceName", DeviceID);
+        capabilities.setCapability("udid", DeviceID);
         capabilities.setCapability("noReset", true);
         capabilities.setCapability("sessionOverride", false);
         capabilities.setCapability("unicodeKeyboard", true);
@@ -61,7 +61,7 @@ public class AndroidXmlParseService {
     public static TestUnit parse(String ApkName,String ApkPackageName,String PlatformName,String PlatformVersion,String DeviceID,String XmlPath) throws IOException, SAXException, ParserConfigurationException {
         try {
             System.out.println("当前为重新安装APK，初始化Android设备,耐心等待App启动ing...");
-            AppiumConfigure(ApkName, ApkPackageName, PlatformName, PlatformVersion, DeviceID, XmlPath);
+            AppiumConfigure(ApkName, ApkPackageName, PlatformName, PlatformVersion, DeviceID);
         } catch (Exception e) {
             e.printStackTrace();
         }

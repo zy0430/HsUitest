@@ -23,6 +23,8 @@ public class TestStep extends TestBase{
 
     private String body;
 
+    private String value;
+
     public StepAction getAction() {
         return action;
     }
@@ -103,11 +105,19 @@ public class TestStep extends TestBase{
         this.body = body;
     }
 
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
     @Override
     public String toString() {
         return "TestStep{" +
-                "action='" + action + '\'' +
-                ", locatoe='" + locator + '\'' +
+                "action=" + action +
+                ", locator='" + locator + '\'' +
                 ", desc='" + desc + '\'' +
                 ", details=" + details +
                 ", key='" + key + '\'' +
@@ -116,6 +126,7 @@ public class TestStep extends TestBase{
                 ", caseid='" + caseid + '\'' +
                 ", url='" + url + '\'' +
                 ", body='" + body + '\'' +
+                ", value='" + value + '\'' +
                 '}';
     }
 }
