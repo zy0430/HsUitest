@@ -15,7 +15,11 @@ public class AppiumUtil {
         if (StringUtil.isBlank(loc_eum)) {
             throw new Exception("当前步骤未定位到任何控件元素！");
         }
-        String loc = Button2.getValue("seven");
+        String loc = null;
+        // 判断 locator 的类型
+        if(loc_eum.startsWith("cal_")) {
+            loc = Button2.getValue(loc_eum);
+        }
 
         if (loc.lastIndexOf("[") < 0) {
             loc = loc + "[0]";
