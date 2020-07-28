@@ -53,7 +53,7 @@
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.opened" value="2" />
@@ -388,7 +388,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595866755324" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595948875988" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../sportRecovery2/pom.xml" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -512,14 +512,11 @@
       <workItem from="1595236678466" duration="7774000" />
       <workItem from="1595406235946" duration="4831000" />
       <workItem from="1595517268495" duration="1496000" />
-      <workItem from="1595859465381" duration="7044000" />
+      <workItem from="1595859465381" duration="7179000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WeChatLogin - 2020.07.27 at 23h 55m 57s.xml">
-      <configuration name="WeChatLogin" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="WeChatLogin - 2020.07.27 at 23h 57m 13s.xml">
       <configuration name="WeChatLogin" configurationId="TestNG" />
     </history-entry>
@@ -547,9 +544,12 @@
     <history-entry file="WeChatLogin - 2020.07.28 at 00h 18m 32s.xml">
       <configuration name="WeChatLogin" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="WeChatLogin - 2020.07.28 at 00h 19m 37s.xml">
+      <configuration name="WeChatLogin" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31740000" />
+    <option name="totallyTimeSpent" value="31875000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -562,7 +562,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4957507" visible="true" weight="0.2077748" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -575,7 +574,7 @@
       <window_info id="Resources Explorer" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.47025496" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.388102" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.25354108" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

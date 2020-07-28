@@ -8,7 +8,7 @@ import AutomationTestSystem.Handler.WaitActionHandler;
 
 public enum StepAction {
 
-    WAIT_FORCED("wait-forced", "强制等待",WaitActionHandler.class),
+    WAIT_FORCED("wait-forced", "强制等待", WaitActionHandler.class),
     ANDROID_CLICK("android-click", "Android端点击操作", ClickActionHandler.class);
 
 

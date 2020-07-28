@@ -4,7 +4,7 @@
         id="case1"
         name="验证在Android系统中，首次启动微信APP，点击登录按钮后，可以正常进入登录界面">
         <step action="wait-forced" value="3000" desc="强制等待3秒"/>
-        <step action="android-click" locator="resource-id=com.miui.calculator:id/btn_7_s" desc="点击7"/>
+        <step action="android-click" locator="seven" desc="点击7"/>
+        <!--<step action="android-click" locator="text=7" desc="点击7"/>-->
     </case>
 </unit>
-

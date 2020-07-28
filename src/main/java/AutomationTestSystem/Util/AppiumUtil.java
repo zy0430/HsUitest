@@ -1,6 +1,7 @@
 package AutomationTestSystem.Util;
 
 import AutomationTestSystem.Base.TestStep;
+import AutomationTestSystem.Coordinate.Button2;
 import com.sun.xml.internal.bind.v2.TODO;
 import org.jsoup.helper.StringUtil;
 import org.openqa.selenium.By;
@@ -10,10 +11,12 @@ import java.util.List;
 
 public class AppiumUtil {
     public static WebElement getElement(TestStep step) throws Exception{
-        String loc = step.getLocator();
-        if (StringUtil.isBlank(loc)) {
+        String loc_eum = step.getLocator();
+        if (StringUtil.isBlank(loc_eum)) {
             throw new Exception("当前步骤未定位到任何控件元素！");
         }
+        String loc = Button2.getValue("seven");
+
         if (loc.lastIndexOf("[") < 0) {
             loc = loc + "[0]";
         }
@@ -37,8 +40,10 @@ public class AppiumUtil {
                 break;
             case "content-desc":
                 e = step.getAdriver().findElementsByAccessibilityId(locatorvalue);
+                break;
             case "xpath":
                 e = step.getAdriver().findElements(By.xpath(locatorvalue));
+                break;
             default:
                 throw new Exception("step元素locator属性配置有误，'='之前必须为resource-id、text、calss、content-desc和xpath之一！");
         }
