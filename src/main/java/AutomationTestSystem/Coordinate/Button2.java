@@ -1,7 +1,8 @@
 package AutomationTestSystem.Coordinate;
 
 public enum Button2 {
-    SEVEN("cal_seven", "resource-id=com.miui.calculator:id/digit_7");
+    SEVEN("cal_seven", "resource-id=com.miui.calculator:id/digit_7"),
+    TWO("cal_two", "resource-id=com.miui.calculator:id/digit_2");
 
     private String type;
 

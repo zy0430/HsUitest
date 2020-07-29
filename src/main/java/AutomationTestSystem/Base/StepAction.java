@@ -3,14 +3,15 @@ package AutomationTestSystem.Base;
 import java.util.Map;
 import java.util.HashMap;
 
+import AutomationTestSystem.Handler.CheckActionHandler;
 import AutomationTestSystem.Handler.ClickActionHandler;
 import AutomationTestSystem.Handler.WaitActionHandler;
 
 public enum StepAction {
 
     WAIT_FORCED("wait-forced", "强制等待", WaitActionHandler.class),
-    ANDROID_CLICK("android-click", "Android端点击操作", ClickActionHandler.class);
-
+    ANDROID_CLICK("android-click", "Android端点击操作", ClickActionHandler.class),
+    ANDROID_CHECK("android-check", "检查元素", CheckActionHandler.class);
 
     private String key;
 
