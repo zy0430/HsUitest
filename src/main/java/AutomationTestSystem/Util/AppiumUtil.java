@@ -1,7 +1,8 @@
 package AutomationTestSystem.Util;
 
 import AutomationTestSystem.Base.TestStep;
-import AutomationTestSystem.PageAndValue.Button2;
+import AutomationTestSystem.PageAndValue.Login;
+import AutomationTestSystem.PageAndValue.SoftIcons;
 import AutomationTestSystem.PageAndValue.SportsRecoveryPage;
 import org.jsoup.helper.StringUtil;
 import org.openqa.selenium.By;
@@ -20,17 +21,12 @@ public class AppiumUtil {
         if (StringUtil.isBlank(loc_eum)) {
             throw new Exception("当前步骤未定位到任何控件元素！");
         }
-        String loc = null;
         // 判断 locator 的类型
-        if(loc_eum.startsWith("cal_")) {
-            loc = Button2.getValue(loc_eum);
+        String loc = LocatorType.selectLocator(loc_eum);
+
+        if (StringUtil.isBlank(loc)) {
+            throw new Exception("当前locator的前缀再系统中不存在");
         }
-        if (loc_eum.startsWith("recover_")) {
-            loc = SportsRecoveryPage.getValue(loc_eum);
-        }
-
-
-
         if (loc.lastIndexOf("[") < 0) {
             loc = loc + "[0]";
         }
