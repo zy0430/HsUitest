@@ -5,13 +5,15 @@ import java.util.HashMap;
 
 import AutomationTestSystem.Handler.CheckActionHandler;
 import AutomationTestSystem.Handler.ClickActionHandler;
+import AutomationTestSystem.Handler.InputActionHandler;
 import AutomationTestSystem.Handler.WaitActionHandler;
 
 public enum StepAction {
 
     WAIT_FORCED("wait-forced", "强制等待", WaitActionHandler.class),
     ANDROID_CLICK("android-click", "Android端点击操作", ClickActionHandler.class),
-    ANDROID_CHECK("android-check", "检查元素", CheckActionHandler.class);
+    ANDROID_CHECK("android-check", "检查元素", CheckActionHandler.class),
+    ANDROID_INPUT("android-input", "安卓端输入内容", InputActionHandler.class);
 
     private String key;
 
@@ -22,7 +24,7 @@ public enum StepAction {
     private static Map<String,StepAction> map;
 
     static{
-        map = new HashMap<String,StepAction>();
+        map = new HashMap<String, StepAction>();
         for(StepAction action : StepAction.values()){
             map.put(action.key(), action);
         }

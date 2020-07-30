@@ -1,8 +1,8 @@
 package AutomationTestSystem.Util;
 
 import AutomationTestSystem.Base.TestStep;
-import AutomationTestSystem.Coordinate.Button2;
-import com.sun.xml.internal.bind.v2.TODO;
+import AutomationTestSystem.PageAndValue.Button2;
+import AutomationTestSystem.PageAndValue.SportsRecoveryPage;
 import org.jsoup.helper.StringUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -25,6 +25,11 @@ public class AppiumUtil {
         if(loc_eum.startsWith("cal_")) {
             loc = Button2.getValue(loc_eum);
         }
+        if (loc_eum.startsWith("recover_")) {
+            loc = SportsRecoveryPage.getValue(loc_eum);
+        }
+
+
 
         if (loc.lastIndexOf("[") < 0) {
             loc = loc + "[0]";
@@ -123,4 +128,5 @@ public class AppiumUtil {
         }
         return null;
     }
+
 }

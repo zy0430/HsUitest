@@ -4,8 +4,7 @@
         <classes>
             <class name="TestCases.WeChatLogin"/>
             <methods>
-                <include name="case1" />
+                <exclude name="case1" />
             </methods>
         </classes>
-    </test>
 </suite>

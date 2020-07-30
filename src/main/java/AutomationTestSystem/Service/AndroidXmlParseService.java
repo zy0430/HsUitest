@@ -205,4 +205,34 @@ public class AndroidXmlParseService {
         }
         return map;
     }
+
+    public static void screenShot(String ScreenshotName) {
+
+        int t = 1;
+        String AppointDir = System.getProperty("user.dir")+"\\test-output\\ExtentReport\\BugScreenshot\\";
+        String picture = AppointDir + ScreenshotName + ".png";
+
+        File file = new File(AppointDir);
+        File[] fs = file.listFiles();
+        File screenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
+        // 指定图片数量，过多删除
+        try {
+            if (fs.length >= 300) {
+                for (File f : fs) {
+                    if (f.getName().contains("png"))
+                        f.delete();
+                }
+            }
+
+            FileUtils.copyFile(screenShot, new File(picture));
+            ++t;
+        } catch (IOException e) {
+            System.out.println("截图失败:" + ScreenshotName);
+            e.printStackTrace();
+        } finally {
+            System.out.println("『发现问题』开始执行: " + "<截图操作,保存目录为[" + picture + "]>");
+        }
+    }
+
 }

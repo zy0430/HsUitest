@@ -1,5 +1,6 @@
 package AutomationTestSystem.Handler;
 
+import AutomationTestSystem.Service.AndroidXmlParseService;
 import org.testng.Assert;
 import AutomationTestSystem.Base.TestStep;
 import AutomationTestSystem.Util.AppiumUtil;
@@ -11,15 +12,15 @@ public class CheckActionHandler {
         String FailHint = testStep.getMessage();
         String CaseID = testStep.getCaseid();
         System.out.println("『正常测试』开始执行: " + "<" + testStep.getDesc() + ">");
-        checkEqualsAndroid(Actual, Expected, FailHint);
+        checkEqualsAndroid(Actual, Expected, FailHint, CaseID);
     }
 
-    public void checkEqualsAndroid(String Actual, String Expected, String FailHint) throws InterruptedException {
+    public void checkEqualsAndroid(String Actual, String Expected, String FailHint, String CaseID) throws InterruptedException {
         try {
             Assert.assertEquals(Actual, Expected, FailHint);
             Thread.sleep(500);
         } catch (Error | InterruptedException e) {
-            // TODO 这里缺个截图功能
+            AndroidXmlParseService.screenShot(CaseID);
             Assert.fail(FailHint + "  " + "Actual 【" + Actual + "】" + "  " + "but found 【" + Expected + "】");
         }
     }

@@ -21,6 +21,8 @@ public class RunUnitService {
         TestCase testCase = getCase(id);
         List<TestStep> testSteps = testCase.getSteps();
         for (TestStep testStep : testSteps) {
+            // TODO 临时截图测试
+//            AndroidXmlParseService.screenShot(testCase.getId() + "：" + testStep.getDesc());
             if (testCase.isCancel()) {
                 continue;
             }
