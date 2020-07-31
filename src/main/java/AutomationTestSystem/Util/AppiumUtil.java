@@ -63,6 +63,9 @@ public class AppiumUtil {
     public static String parseStringHasEls(String str) throws Exception{
         int start = -1,end = -1;
         String res = str;
+        if (null == str) {
+            throw new Exception("期望值的元素不在系统枚举中");
+        }
         do{
             start = str.indexOf("${", end);
             end = str.indexOf("}",start);

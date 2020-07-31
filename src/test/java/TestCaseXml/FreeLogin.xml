@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <unit id="FreeLogin" desc="free呼吸登录">
-    <case
-        id="case1"
-        name="输入手机号">
+    <case id="case1" name="测试手机号为空是否能登录">
+        <step action="android-click" locator="login_button" desc="点击登录帐号"/>
+        <step action="android-check" locator="login_button" desc="检查登录按钮是否存在" expect="login_button"/>
+    </case>
+
+
+    <case id="case3" name="输入手机号">
         <step action="android-input" locator="login_phone" value="login_phone" desc="输入手机号"/>
     </case>
-    <case
-        id="case2"
-        name="输入密码">
+
+    <case id="case4" name="输入密码">
         <step action="android-input" locator="login_password" value="login_password" desc="输入密码"/>
     </case>
 </unit>
