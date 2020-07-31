@@ -1,8 +1,10 @@
 package AutomationTestSystem.Handler;
 
 import AutomationTestSystem.Base.TestStep;
+import AutomationTestSystem.PageAndValue.sendvalues.LoginValue;
 import AutomationTestSystem.PageAndValue.sendvalues.SportsRecoveryPageValue;
 import AutomationTestSystem.Util.AppiumUtil;
+import AutomationTestSystem.Util.InputType;
 import org.openqa.selenium.WebElement;
 
 import java.util.concurrent.TimeUnit;
@@ -14,9 +16,6 @@ public class InputActionHandler {
         WebElement e = AppiumUtil.getElement(step);
         e.clear();
         // 需要判断值所在的文件夹。
-        if (step.getValue().startsWith("recover_")) {
-            String value = SportsRecoveryPageValue.getValue(step.getValue());
-            e.sendKeys(AppiumUtil.parseStringHasEls(value));
-        }
+        InputType.inputValue(step.getValue(), e);
     }
 }
