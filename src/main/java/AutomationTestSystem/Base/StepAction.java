@@ -4,8 +4,10 @@ import java.util.Map;
 import java.util.HashMap;
 
 import AutomationTestSystem.Handler.CheckActionHandler;
+import AutomationTestSystem.Handler.ClearActionHandler;
 import AutomationTestSystem.Handler.ClickActionHandler;
 import AutomationTestSystem.Handler.InputActionHandler;
+import AutomationTestSystem.Handler.SlideActionHandler;
 import AutomationTestSystem.Handler.WaitActionHandler;
 
 public enum StepAction {
@@ -13,7 +15,9 @@ public enum StepAction {
     WAIT_FORCED("wait-forced", "强制等待", WaitActionHandler.class),
     ANDROID_CLICK("android-click", "Android端点击操作", ClickActionHandler.class),
     ANDROID_CHECK("android-check", "检查元素", CheckActionHandler.class),
-    ANDROID_INPUT("android-input", "安卓端输入内容", InputActionHandler.class);
+    ANDROID_INPUT("android-input", "安卓端输入内容", InputActionHandler.class),
+    ANDROID_CLEAR("android-clear", "安卓清空内容", ClearActionHandler.class),
+    ANDROID_SLIDE("android-slide", "安卓滑动", SlideActionHandler.class);
 
     private String key;
 

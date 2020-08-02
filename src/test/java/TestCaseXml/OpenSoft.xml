@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <unit id="OpenSoft" desc="打开软件">
     <case
-        id="case11"
+        id="case1"
         name="验证是否能打开软件">
         <step action="wait-forced" value="3000" desc="强制等待3秒"/>
         <step action="android-click" locator="free_icon" desc="打开free呼吸软件"/>

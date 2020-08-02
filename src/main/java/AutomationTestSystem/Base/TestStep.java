@@ -1,5 +1,6 @@
 package AutomationTestSystem.Base;
 
+import java.util.Arrays;
 import java.util.Map;
 
 public class TestStep extends TestBase{
@@ -26,6 +27,10 @@ public class TestStep extends TestBase{
     private String value;
 
     private String message;
+
+    private String slidePoint;
+
+    private String color;
 
     public String getMessage() {
         return message;
@@ -123,6 +128,22 @@ public class TestStep extends TestBase{
         this.value = value;
     }
 
+    public String getSlidePoint() {
+        return slidePoint;
+    }
+
+    public void setSlidePoint(String slidePoint) {
+        this.slidePoint = slidePoint;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     @Override
     public String toString() {
         return "TestStep{" +
@@ -137,6 +158,9 @@ public class TestStep extends TestBase{
                 ", url='" + url + '\'' +
                 ", body='" + body + '\'' +
                 ", value='" + value + '\'' +
+                ", message='" + message + '\'' +
+                ", slidePoint='" + slidePoint + '\'' +
+                ", color='" + color + '\'' +
                 '}';
     }
 }

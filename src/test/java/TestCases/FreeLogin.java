@@ -6,7 +6,7 @@ import AutomationTestSystem.Service.RunUnitService;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class FeerLogin {
+public class FreeLogin {
     private static RunUnitService runService;
 
     @BeforeTest
@@ -23,8 +23,34 @@ public class FeerLogin {
         runService.runCase("case1");
     }
 
+//    @Test
+//    public void case2() throws Exception {
+//        runService.runCase("case2");
+//    }
+//
+//
     @Test
-    public void case2() throws Exception {
-        runService.runCase("case2");
+    public void case3() throws Exception {
+        runService.runCase("case3");
+    }
+
+    @Test
+    public void case4() throws Exception {
+        runService.runCase("case4");
+    }
+
+    @Test
+    public void case5() throws Exception {
+        runService.runCase("case5");
+    }
+
+    @Test
+    public void case6() throws Exception {
+        runService.runCase("case6");
+    }
+
+    @Test
+    public void case7() throws Exception {
+        runService.runCase("case7");
     }
 }

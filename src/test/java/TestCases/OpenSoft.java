@@ -20,6 +20,6 @@ public class OpenSoft {
 
     @Test
     public void case1() throws Exception {
-        runService.runCase("case11");
+        runService.runCase("case1");
     }
 }
