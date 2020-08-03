@@ -30,8 +30,6 @@ public class TestStep extends TestBase{
 
     private String slidePoint;
 
-    private String color;
-
     public String getMessage() {
         return message;
     }
@@ -136,14 +134,6 @@ public class TestStep extends TestBase{
         this.slidePoint = slidePoint;
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
     @Override
     public String toString() {
         return "TestStep{" +
@@ -160,7 +150,6 @@ public class TestStep extends TestBase{
                 ", value='" + value + '\'' +
                 ", message='" + message + '\'' +
                 ", slidePoint='" + slidePoint + '\'' +
-                ", color='" + color + '\'' +
                 '}';
     }
 }

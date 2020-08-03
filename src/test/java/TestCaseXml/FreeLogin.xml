@@ -34,6 +34,7 @@
     <case
         id="case7"
         name="滑动">
-        <step action="android-slide" slidePoint="50,1000,1000,1000" desc="滑动测试" color="blue"/>
+        <!--<step action="android-slide" slidePoint="800,1800,800,200" desc="滑动测试"/>-->
+        <step action="android-slide" slidePoint="600,1600,600,600" desc="滑动测试"/>
     </case>
 </unit>

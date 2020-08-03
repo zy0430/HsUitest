@@ -1,3 +1,5 @@
+package base;
+
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
@@ -13,6 +15,7 @@ import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterClass;
@@ -37,17 +40,15 @@ public class Basic{
 
     @BeforeClass
     public void setup() throws Exception {
-        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-        desiredCapabilities.setCapability("noReset", true);
-        desiredCapabilities.setCapability("platformName", "Android");
-        desiredCapabilities.setCapability("deviceName", "4768db32");
-        desiredCapabilities.setCapability("platformVersion", "10.0");
-//        URL remoteUrl = new URL("http://127.0.0.1:4723/wd/hub");
-//        driver = new AndroidDriver(remoteUrl, desiredCapabilities);
-        driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
-        // 隐式等待
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        System.out.println("--------------------start--------------------");
+//        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+//        desiredCapabilities.setCapability("noReset", true);
+//        desiredCapabilities.setCapability("platformName", "Android");
+//        desiredCapabilities.setCapability("deviceName", "4768db32");
+//        desiredCapabilities.setCapability("platformVersion", "10.0");
+//        driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
+//        // 隐式等待
+//        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//        System.out.println("--------------------start--------------------");
     }
 
     @Test
@@ -62,19 +63,19 @@ public class Basic{
         tAction.press(pressOptions).waitAction(waitOptions).moveTo(pressOptions1).release().perform();
     }
 
-    //    @Test
-//    public void plus() throws InterruptedException {
-//       driver.findElementById("com.hsrg.ihealth:id/btnSixth").click();
-//        System.out.println("-----------------start-----------------");
-//        new WebDriverWait(driver, 3).until(ExpectedConditions.visibilityOfElementLocated
-//                (By.id("com.hsrg.ihealth:id/btnFourth")));
-//    }
+    @Parameters({"color"})
+    @Test(groups = {"zy"})
+    public void case1(String color) {
+        System.out.println(color);
+    }
 
+    @DataProvider(name = "data")
+    public Object[][] dataProvider() {
+        return new Object[][]{{"data1"}, {"data2"}, {"data3"}};
+    }
 
-//    @AfterClass
-//    public void tearDown() throws Exception {
-//        Thread.sleep(3000);
-//        driver.quit();
-//        System.out.println("--------------------end--------------------");
-//    }
+    @Test(dataProvider = "data")
+    public void case2(String data) {
+        System.out.print("testDemo4, " + "data=" + data + "\n");
+    }
 }
