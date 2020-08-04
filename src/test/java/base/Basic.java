@@ -32,6 +32,7 @@ import java.net.URL;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
+@Test(groups = "deploy")
 public class Basic{
 //    AndroidDriver<WebElement> driver;
     private AndroidDriver driver;
@@ -77,5 +78,15 @@ public class Basic{
     @Test(dataProvider = "data")
     public void case2(String data) {
         System.out.print("testDemo4, " + "data=" + data + "\n");
+    }
+
+    @Test(dependsOnMethods = {"method1"})
+    public void method2() {
+        System.out.println("this is method2");
+    }
+
+    @Test
+    public void method1(){
+        System.out.println("this is method1");
     }
 }

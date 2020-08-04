@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <suite name="Suite1" verbose="1">
-    <test name="Regression1">
+    <test name="Regression1" preserve-order="true">
         <parameter name="color" value="blue"/> <!-- 添加参数 -->
         <!--<groups>-->
             <!--<run>-->
@@ -8,9 +8,16 @@
             <!--</run>-->
         <!--</groups>-->
         <classes>
-            <class name="base.Basic"/>
+            <!--<class name="base.Basic"/>-->
+            <!--<methods>-->
+                <!--<include name="method2"/>-->
+                <!--<include name="method1"/>-->
+            <!--</methods>-->
+
+            <class name="base.Basic2"/>
             <methods>
-                <include name="case2"/>
+                <include name="method4"/>
+                <!--<include name="method4"/>-->
             </methods>
         </classes>
 
