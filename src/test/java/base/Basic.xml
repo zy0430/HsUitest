@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <suite name="Suite1" verbose="1">
-    <test name="Regression1" preserve-order="true">
-        <parameter name="color" value="blue"/> <!-- 添加参数 -->
-        <!--<groups>-->
-            <!--<run>-->
-                <!--<include name="BB"/>-->
-            <!--</run>-->
-        <!--</groups>-->
-        <classes>
-            <!--<class name="base.Basic"/>-->
-            <!--<methods>-->
-                <!--<include name="method2"/>-->
-                <!--<include name="method1"/>-->
-            <!--</methods>-->
+    <test name="example1"  preserve-order="true">
 
-            <class name="base.TestClass1"/>
+        <parameter name="name1" value="db.properties" />
+        <parameter name="color" value="10" />
+
+        <classes>
+            <class name="base.TestParameterXML" />
             <methods>
-                <include name="test"/>
-                <!--<include name="method4"/>-->
+                <include name="test2" />
             </methods>
         </classes>
 
