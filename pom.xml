@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>zy</groupId>
-    <artifactId>sportRecovery2</artifactId>
+    <artifactId>HsUitest</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
