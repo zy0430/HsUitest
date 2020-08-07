@@ -1,8 +1,6 @@
 package AutomationTestSystem.Handler;
 
 import AutomationTestSystem.Base.TestStep;
-import AutomationTestSystem.PageAndValue.sendvalues.LoginValue;
-import AutomationTestSystem.PageAndValue.sendvalues.SportsRecoveryPageValue;
 import AutomationTestSystem.Util.AppiumUtil;
 import AutomationTestSystem.Util.InputType;
 import org.openqa.selenium.WebElement;

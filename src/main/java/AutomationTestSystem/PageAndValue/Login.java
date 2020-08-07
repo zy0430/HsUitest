@@ -1,9 +1,7 @@
 package AutomationTestSystem.PageAndValue;
 
 public enum Login {
-    LOGINNAME("login_phone", "resource-id=com.hsrg.proc:id/userName"),
-    LOGINPASSWOED("login_password", "resource-id=com.hsrg.proc:id/password"),
-    LOGINBUTTON("login_button", "resource-id=com.hsrg.proc:id/loginBtn");
+    LOGINNAME("login_button", "resource-id=com.hsrg.proc:id/loginBtn");
 
     private String type;
 

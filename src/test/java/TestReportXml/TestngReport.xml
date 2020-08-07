@@ -2,17 +2,10 @@
 <suite name="Appium测试报告" parallel="false" configfailurepolicy ="continue">
     <test name="测试free呼吸" junit="false" verbose="3" parallel="false" thread-count="5" annotations="javadoc" time-out="60000" enabled="true" skipfailedinvocationcounts="true" preserve-order="true" allow-return-values="true">
         <classes>
-            <!--<class name="TestCases.OpenSoft"/>-->
-            <!--<methods>-->
-                <!--<include name="case1" />-->
-            <!--</methods>-->
             <class name="TestCases.FreeLogin"/>
             <methods>
-            <include name="case7" />
-            <!--<include name="case3" />-->
-            <!--<include name="case4" />-->
+            <include name="case1" />
            </methods>
-
         </classes>
     </test>
 </suite>

@@ -6,35 +6,4 @@
         <step action="android-click" locator="login_button" desc="点击登录帐号"/>
         <step action="android-check" locator="login_button" desc="检查登录按钮是否存在" expect="login_button"/>
     </case>
-
-    <case
-        id="case3"
-        name="输入手机号">
-        <step action="android-input" locator="login_phone" value="login_phone" desc="输入手机号"/>
-    </case>
-
-    <case
-        id="case4"
-        name="输入密码">
-        <step action="android-input" locator="login_password" value="login_password" desc="输入密码"/>
-    </case>
-
-    <case
-        id="case5"
-        name="清空账号">
-        <step action="android-clear" locator="login_phone" desc="清空账号"/>
-    </case>
-
-    <case
-        id="case6"
-        name="清空密码">
-        <step action="android-clear" locator="login_password" desc="清空密码"/>
-    </case>
-
-    <case
-        id="case7"
-        name="滑动">
-        <!--<step action="android-slide" slidePoint="800,1800,800,200" desc="滑动测试"/>-->
-        <step action="android-slide" slidePoint="600,1600,600,600" desc="滑动测试"/>
-    </case>
 </unit>

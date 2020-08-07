@@ -1,9 +1,6 @@
 package AutomationTestSystem.Util;
 
 import AutomationTestSystem.Base.TestStep;
-import AutomationTestSystem.PageAndValue.Login;
-import AutomationTestSystem.PageAndValue.SoftIcons;
-import AutomationTestSystem.PageAndValue.SportsRecoveryPage;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
@@ -12,7 +9,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import java.time.Duration;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

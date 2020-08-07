@@ -1,8 +1,7 @@
 package AutomationTestSystem.PageAndValue.sendvalues;
 
 public enum LoginValue {
-    NAMEINPUT("login_phone", "13111111111"),
-    PASSWORDPUT("login_password", "a1234567");
+    NAMEINPUT("login_phone", "13111111111");
 
     private String type;
 

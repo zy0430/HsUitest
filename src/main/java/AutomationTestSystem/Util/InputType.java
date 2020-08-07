@@ -1,8 +1,5 @@
 package AutomationTestSystem.Util;
 
-import AutomationTestSystem.PageAndValue.Login;
-import AutomationTestSystem.PageAndValue.SoftIcons;
-import AutomationTestSystem.PageAndValue.SportsRecoveryPage;
 import AutomationTestSystem.PageAndValue.sendvalues.LoginValue;
 import org.openqa.selenium.WebElement;
 
