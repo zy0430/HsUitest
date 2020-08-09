@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<suite name="Suite1" verbose="1">
+<suite name="Suite1" verbose="1" parallel="methods" thread-count="5">
     <test name="example1"  preserve-order="true">
 
-        <parameter name="name1" value="db.properties" />
-        <parameter name="color" value="10" />
+        <!--<parameter name="name1" value="db.properties" />-->
+        <!--<parameter name="color" value="10" />-->
+
+        <!--<classes>-->
+            <!--<class name="base.TestParameterXML" />-->
+            <!--<methods>-->
+                <!--<include name="test2" />-->
+            <!--</methods>-->
+        <!--</classes>-->
 
         <classes>
+            <class name="base.Basic4" />
             <class name="base.TestParameterXML" />
-            <methods>
-                <include name="test2" />
-            </methods>
         </classes>
 
+        <groups>
+            <run>
+                <include name="g1"/>
+            </run>
+        </groups>
     </test>
 </suite>
