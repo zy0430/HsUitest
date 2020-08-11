@@ -12,7 +12,6 @@
             <!--<include name="case3" />-->
             <!--<include name="case4" />-->
            </methods>
-
         </classes>
     </test>
 </suite>

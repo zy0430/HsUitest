@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<suite name="testng 测试" parallel="false" thread-count="3" group-by-instances="false" proserve-order="true" >
+<suite name="testng 测试">
     <test name="测试标签12">
         <classes>
-            <class name="base.base1.Base1">
+            <class name="base.base1.Base1" allow-return-values="true">
                 <methods>
                     <include name="test1" />
-                    <include name="test2" />
-                    <include name="test3" />
+                    <!--<include name="test3" />-->
                 </methods>
             </class>
-            <!--<class name="base.base1.Base2">-->
-                <!--<methods>-->
-                    <!--<include name="test3" />-->
-                    <!--<include name="test4" />-->
-                <!--</methods>-->
-            <!--</class>-->
         </classes>
     </test>
 
     <!--<test name="测试标签34">-->
         <!--<classes>-->
-            <!--<class name="base.base1.Base2">-->
+            <!--<class name="base.base1.Base1">-->
                 <!--<methods>-->
                     <!--<include name="test3" />-->
                     <!--<include name="test4" />-->
