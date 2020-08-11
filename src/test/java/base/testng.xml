@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<suite name="testng 测试">
+<suite name="testng 测试" data-provider-thread-count="2" parallel="true" thread-count="3" >
     <test name="测试标签12">
         <classes>
-            <class name="base.base1.Base1" allow-return-values="true">
-                <methods>
-                    <include name="test1" />
-                    <!--<include name="test3" />-->
-                </methods>
+            <class name="base.base1.Base1">
+                <!--<methods>-->
+                    <!--<include name="test1" />-->
+                    <!--&lt;!&ndash;<include name="test3" />&ndash;&gt;-->
+                <!--</methods>-->
             </class>
         </classes>
     </test>

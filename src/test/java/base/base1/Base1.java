@@ -4,6 +4,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class Base1 {
@@ -23,23 +24,23 @@ public class Base1 {
 //        System.out.println("调用方法后");
 //    }
 
-    @Test()
-    public String test1() {
-        return "aa";
+    @Test(dataProvider = "str")
+    public void test1(String num) {
+        System.out.println("test1：" + num + "★线程id：" + Thread.currentThread().getId());
     }
 
-    @Test
-    public void test2() {
-        System.out.println("当前线程：" + Thread.currentThread().getId() + "：this is test2");
+    @Test(dataProvider = "str")
+    public void test2(String num) {
+        System.out.println("test2：" + num + "★线程id：" + Thread.currentThread().getId());
     }
 
-    @Test
-    public void test3() {
-        System.out.println("当前线程：" + Thread.currentThread().getId() + "：this is test3");
+    @Test(dataProvider = "str")
+    public void test3(String num) {
+        System.out.println("test3：" + num + "★线程id：" + Thread.currentThread().getId());
     }
 
-    @Test
-    public void test4() {
-        System.out.println("当前线程：" + Thread.currentThread().getId() + "：this is test4");
+    @DataProvider(name = "str", parallel = true)
+    public Object[][] dataprovider() {
+        return new Object[][]{{"1"}, {"2"}, {"3"}, {"4"}, {"5"}, {"6"}};
     }
 }
