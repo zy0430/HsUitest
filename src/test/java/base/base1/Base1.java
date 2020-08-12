@@ -9,42 +9,18 @@ import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
 public class Base1 {
-
-//    @BeforeClass
-//    public void beforeTest() {
-//        int a = 100/0;
-//    }
-//
-//    @BeforeMethod
-//    public void beforeMethod() {
-//        System.out.println("调用方法前");
-//    }
-//
-//    @AfterMethod
-//    public void afterMethod() {
-//        System.out.println("调用方法后");
-//    }
-
-    @Test(dataProvider = "str")
-    public void test1(String num) {
-        System.out.println("test1：" + num + "★线程id：" + Thread.currentThread().getId());
+    @Factory(dataProvider = "zz")
+    public Object[] test1(int num) {
+        Object[] objects = new Object[num];
+        for (int i=0; i<num; i++) {
+            Base2 base2 = new Base2(i+"");
+            objects[i] = base2;
+        }
+        return objects;
     }
 
-    @Test(dataProvider = "str")
-    public void test2(String num) {
-        System.out.println("test2：" + num + "★线程id：" + Thread.currentThread().getId());
+    @DataProvider(name = "zz")
+    public Object[][] num() {
+        return new Object[][]{new Object[]{3}};
     }
-
-    @Test(dataProvider = "str")
-    public void test3(String num) {
-        System.out.println("test3：" + num + "★线程id：" + Thread.currentThread().getId());
-    }
-
-    @DataProvider(name = "str", parallel = true)
-    public Object[][] dataprovider() {
-        return new Object[][]{{"1"}, {"2"}, {"3"}, {"4"}, {"5"}, {"6"}};
-    }
-
-    @Factory
-    public void test4() {}
 }

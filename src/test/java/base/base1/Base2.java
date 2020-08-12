@@ -1,15 +1,22 @@
 package base.base1;
 
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
 public class Base2 {
-    @Test(groups = "3")
-    public void test3() {
-        System.out.println("Base2当前线程：" + Thread.currentThread().getId() + "：this is test3");
+    private String str;
+
+    public Base2(String str) {
+        this.str = str;
+    }
+    @Test
+    public void test1() {
+        System.out.println("this is test1：" + str);
     }
 
-    @Test(groups = "4")
-    public void test4() {
-        System.out.println("Base2当前线程：" + Thread.currentThread().getId() + "：this is test4");
+    @Test(dependsOnMethods = "test1")
+    public void test2() {
+        System.out.println("this is test2：" + str);
     }
 }
