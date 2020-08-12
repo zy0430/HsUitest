@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<suite name="testng 测试" data-provider-thread-count="2" parallel="true" thread-count="3" >
+<suite name="testng 测试"  data-provider-thread-count="3" >
     <test name="测试标签12">
         <classes>
             <class name="base.base1.Base1">

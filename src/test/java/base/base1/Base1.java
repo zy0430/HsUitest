@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
 public class Base1 {
@@ -43,4 +44,7 @@ public class Base1 {
     public Object[][] dataprovider() {
         return new Object[][]{{"1"}, {"2"}, {"3"}, {"4"}, {"5"}, {"6"}};
     }
+
+    @Factory
+    public void test4() {}
 }
