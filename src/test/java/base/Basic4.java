@@ -7,25 +7,15 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class    Basic4 {
-
-    @BeforeTest
-    public void test2() {
-        System.out.println("before test");
-    }
+public class Basic4 {
 
     @Test(groups = "g1")
     public void test1() {
-        System.out.println("马上要执行方法啦");
+        System.out.println("this is g1");
     }
 
-    @BeforeMethod
-    public void test3() {
-        System.out.println("before methods");
-    }
-
-    @AfterClass(groups = "g1")
-    public void test5() {
-        System.out.println("after class");
+    @Test(groups = "g2")
+    public void test2() {
+        System.out.println("this is g2");
     }
 }

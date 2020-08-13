@@ -3,22 +3,11 @@
     <test name="测试标签12" group-by-instances="true">
         <classes>
             <class name="base.base1.Base2" >
-                <!--<methods>-->
-                    <!--<include name="test1" />-->
-                    <!--&lt;!&ndash;<include name="test3" />&ndash;&gt;-->
-                <!--</methods>-->
             </class>
         </classes>
     </test>
 
-    <!--<test name="测试标签34">-->
-        <!--<classes>-->
-            <!--<class name="base.base1.Base1">-->
-                <!--<methods>-->
-                    <!--<include name="test3" />-->
-                    <!--<include name="test4" />-->
-                <!--</methods>-->
-            <!--</class>-->
-        <!--</classes>-->
-    <!--</test>-->
+
+
 </suite>
+
