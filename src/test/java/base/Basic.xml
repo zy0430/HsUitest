@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <suite name="Suite1">
-   
+
+    <!--<listeners>-->
+        <!--<listener class-name="base.base2.Listen"/>-->
+    <!--</listeners>-->
+
+    <parameter name="color" value="blue"/>
+
+    <test name="简单测试">
+        <classes>
+            <class name="base.base2.TestListen" />
+        </classes>
+    </test>
 </suite>
